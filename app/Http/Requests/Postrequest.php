@@ -25,7 +25,7 @@ class Postrequest extends FormRequest
     {
         return [
             'category'  => 'required',
-            'body' => 'required|max:255',
+            'body' => 'required',
             'title' => 'required|max:255',
 
         ];
@@ -36,7 +36,6 @@ class Postrequest extends FormRequest
             'title.required' => 'タイトルは必須です',
             'taile.max'      => 'タイトルは255文字以内で入力してください',
             'body.required'  => '本文は必須です',
-            'body.max'       => '本文は255文字以内で入力してください',
             'category.required' => 'カテゴリー選択は必須です',
             ];
         }
